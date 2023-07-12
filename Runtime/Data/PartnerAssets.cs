@@ -4,7 +4,7 @@ using ReadyPlayerMe.AvatarLoader;
 
 namespace ReadyPlayerMe.AvatarCreator
 {
-    public struct PartnerAsset
+    public class PartnerAsset
     {
         public string Id;
         [JsonConverter(typeof(AssetTypeConverter))]
@@ -16,7 +16,7 @@ namespace ReadyPlayerMe.AvatarCreator
         public LockedCategories[] LockedCategories;
     }
 
-    public struct LockedCategories
+    public class LockedCategories
     {
         public string Name;
         public KeyValuePair<string, string>[] CustomizationCategories;

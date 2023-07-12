@@ -80,6 +80,9 @@ namespace ReadyPlayerMe.AvatarCreator
         public bool IsLockedAssetCategories(string id)
         {
             var asset = assets.FirstOrDefault(x => x.Id == id);
+            if (asset == null)
+                asset = new PartnerAsset();
+
             return asset.LockedCategories != null && asset.LockedCategories.Length > 0;
         }
 
