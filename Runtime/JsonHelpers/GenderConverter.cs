@@ -9,6 +9,7 @@ namespace ReadyPlayerMe.AvatarCreator
     {
         private const string MALE = "male";
         private const string FEMALE = "female";
+        private const string NONE = "";
 
         public override bool CanConvert(Type objectType)
         {
@@ -21,7 +22,7 @@ namespace ReadyPlayerMe.AvatarCreator
             {
                 OutfitGender.Masculine => MALE,
                 OutfitGender.Feminine => FEMALE,
-                OutfitGender.None => null,
+                OutfitGender.None => NONE,
                 _ => throw new ArgumentOutOfRangeException(nameof(value), value, null)
             };
             serializer.Serialize(writer, newValue);
