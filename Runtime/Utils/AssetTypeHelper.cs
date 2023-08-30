@@ -34,6 +34,9 @@ namespace ReadyPlayerMe.AvatarCreator
             { "eyebrowColor", AssetType.EyebrowColor },
             { "beardColor", AssetType.BeardColor },
             { "faceStyle", AssetType.FaceStyle },
+            { "bottom", AssetType.Bottom },
+            { "footwear", AssetType.Footwear},
+            { "top", AssetType.Top},
         };
 
         public static bool IsFaceAsset(this AssetType assetType)
