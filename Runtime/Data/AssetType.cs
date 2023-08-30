@@ -21,5 +21,8 @@
         EyebrowColor,
         BeardColor,
         FaceStyle,
+        Bottom,
+        Footwear,
+        Top,
     }
 }
